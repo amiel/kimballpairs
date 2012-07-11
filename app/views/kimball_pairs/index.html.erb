@@ -1,0 +1,12 @@
+<% categories.each do |category| %>
+
+  <h2><%= category.title %></h2>
+  <h4><%= category.subtitle %></h4>
+  <ul>
+    <% category.kimball_pairs.each do |pair| %>
+      <li><%= pair %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= link_to 'Add to this list', new_submission_path %>

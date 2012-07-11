@@ -20,12 +20,6 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -34,13 +28,13 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-gem 'less'
+# gem 'less'
 gem 'simple_form'
 gem 'draper'
 
-# gem 'activeadmin'
-# gem 'sass-rails'
-# gem "meta_search", '>= 1.1.0.pre'
+gem 'activeadmin'
+gem 'sass-rails'
+gem "meta_search", '>= 1.1.0.pre'
 
 group :production do
   # gem 'pg'
@@ -52,22 +46,22 @@ group :development do
   # gem 'hirb'
   gem 'sqlite3'
   # gem 'mysql2'
-  # gem 'heroku'
+  gem 'heroku'
 end
 
 group :test do
-  gem 'rspec-rails', '~> 2.9'
-  gem 'guard'
-  gem 'guard-rspec'
-  gem 'guard-bundler'
+  # gem 'rspec-rails', '~> 2.9'
+  # gem 'guard'
+  # gem 'guard-rspec'
+  # gem 'guard-bundler'
   # For guard
-  gem 'rb-fsevent', require: false
-  gem 'growl', require: false
+  # gem 'rb-fsevent', require: false
+  # gem 'growl', require: false
 
   # gem 'timecop'
   # gem 'faker'
 
-  gem 'term-ansicolor'
+  # gem 'term-ansicolor'
 
   # gem 'guard-cucumber'
   # gem 'launchy', require: false
