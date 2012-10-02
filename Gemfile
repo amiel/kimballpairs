@@ -35,9 +35,10 @@ gem 'draper'
 gem 'activeadmin'
 gem 'sass-rails'
 gem "meta_search", '>= 1.1.0.pre'
+gem 'thin'
 
 group :production do
-  # gem 'pg'
+  gem 'pg'
 end
 
 group :development do
