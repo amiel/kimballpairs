@@ -12,7 +12,7 @@ ActiveAdmin.register Submission do
     active_admin_comments
   end
 
-  sidebar 'Approve' do
+  sidebar 'Approve', only: :show do
     div do
       p("Eventually there will be an 'Approve' button here. Like this:").html_safe +
       button_to('Approve', '#', method: :get).html_safe +
