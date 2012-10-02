@@ -13,7 +13,11 @@ ActiveAdmin.register Submission do
   end
 
   sidebar 'Approve' do
-    # button_to 'Approve'
+    div do
+      p("Eventually there will be an 'Approve' button here. Like this:").html_safe +
+      button_to('Approve', '#', method: :get).html_safe +
+      p("Right now it does nothing, but eventually it will send you to the #{ link_to "new kimball pair page", new_admin_kimball_pair_path } with the relevant fields already filled out").html_safe
+    end
   end
 
 #  member_acton :approve, method: :post do
