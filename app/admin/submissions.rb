@@ -13,12 +13,12 @@ ActiveAdmin.register Submission do
   end
 
   sidebar 'Approve' do
-    button_to 'Approve',
+    # button_to 'Approve'
   end
 
-  member_acton :approve, method: :post do
-    submission = Submission.find params[:id]
-    kimball_pair = KimballPair.new # ...
-    redirect_to [:admin, kimball_pair]
-  end
+#  member_acton :approve, method: :post do
+#    submission = Submission.find params[:id]
+#    kimball_pair = KimballPair.new # ...
+#    redirect_to [:admin, kimball_pair]
+#  end
 end
