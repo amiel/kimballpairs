@@ -10,4 +10,8 @@ class Submission < ActiveRecord::Base
     words
   end
   alias_method :display_name, :to_s
+
+  def notification_email
+    SubmissionMailer.notification(self)
+  end
 end

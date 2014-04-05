@@ -7,7 +7,9 @@ class SubmissionsController < ApplicationController
   end
 
   def create
-    respond_with(@submission = Submission.create(params[:submission]), location: root_path)
+    @submission = Submission.create(params[:submission])
+    @submission.notification_email.deliver
+    respond_with @submission, location: root_path
   end
 
 end
