@@ -7,6 +7,7 @@ ActiveAdmin.register Submission do
   scope :approved
 
   index do
+    column('Submitter', :name)
     column(:words)
     column(:rationale) { |resource| truncate resource.rationale }
     column(:approved) { |resource| link_to resource.kimball_pair, [:admin, resource.kimball_pair] if resource.kimball_pair }
@@ -15,7 +16,7 @@ ActiveAdmin.register Submission do
   end
 
   show title: :to_s do
-    attributes_table :words, :rationale do
+    attributes_table :name, :words, :rationale do
       row(:approved) { |resource| link_to resource.kimball_pair, [:admin, resource.kimball_pair] if resource.kimball_pair }
       row(:created_at)
     end
