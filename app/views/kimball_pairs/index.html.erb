@@ -2,7 +2,7 @@
 <% categories.in_groups_of(3, false).each do |category_group| %>
   <div class="row">
     <% category_group.each do |category| %>
-      <div class="span4">
+      <div class="category span4">
         <div class="well">
           <h2><%= category.title %></h2>
           <h4><%= category.subtitle %></h4>
@@ -16,3 +16,12 @@
     <% end %>
   </div>
 <% end %>
+
+<div class="row">
+  <div class="span12">
+    <div class="well">
+      <h2>Submit a new kimball pair</h2>
+      <%= render 'submissions/form' %>
+    </div>
+  </div>
+</div>

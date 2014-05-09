@@ -11,3 +11,8 @@
  *= require_self
  *= require bootstrap_and_overrides
 */
+
+.category h4{ font-weight: normal; }
+
+
+form#new_submission textarea{ width: 400px; }
