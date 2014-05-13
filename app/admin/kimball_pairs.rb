@@ -7,6 +7,7 @@ ActiveAdmin.register KimballPair do
     f.inputs do
       f.input :category
       f.input :words
+      f.input :comments
     end
 
     f.buttons
@@ -14,12 +15,13 @@ ActiveAdmin.register KimballPair do
 
   index do
     column(:words, sortable: 'words') { |resource| link_to resource, [:admin, resource] }
+    column(:submitted_by)
     column(:category)
     default_actions
   end
 
   show title: :to_s do
-    attributes_table :words, :category, :created_at
+    attributes_table :words, :category, :comments, :submitted_by, :created_at
 
     active_admin_comments
   end

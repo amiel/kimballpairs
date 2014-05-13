@@ -14,4 +14,8 @@ class Submission < ActiveRecord::Base
   def notification_email
     SubmissionMailer.notification(self)
   end
+
+  def name
+    super.presence || 'N/A'
+  end
 end
