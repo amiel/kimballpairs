@@ -15,6 +15,7 @@ ActiveAdmin.register KimballPair do
 
   index do
     column(:words, sortable: 'words') { |resource| link_to resource, [:admin, resource] }
+    column(:comments)
     column(:submitted_by)
     column(:category)
     default_actions

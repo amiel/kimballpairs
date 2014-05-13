@@ -7,7 +7,7 @@
           <h2><%= category.title %></h2>
           <h4><%= category.subtitle %></h4>
           <ul>
-            <% category.kimball_pairs.each do |pair| %>
+            <% category.kimball_pairs.ordered.each do |pair| %>
               <li><%= pair %></li>
             <% end %>
           </ul>
