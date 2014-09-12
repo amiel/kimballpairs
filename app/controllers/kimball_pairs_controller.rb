@@ -3,6 +3,10 @@ class KimballPairsController < ApplicationController
     @submission = Submission.new
   end
 
+  def show
+    @kimball_pair = KimballPair.find params[:id]
+  end
+
   protected
 
   def categories
