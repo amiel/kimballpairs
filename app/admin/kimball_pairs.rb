@@ -23,7 +23,9 @@ ActiveAdmin.register KimballPair do
 
   show title: :to_s do
     attributes_table :words, :category, :comments, :submitted_by, :created_at do
-      row(:submission) { admin_submission_path(resource.submission) }
+      row(:submission) do
+        link_to "Submission", admin_submission_path(resource.submission) if resource.submission
+      end
     end
 
     active_admin_comments
