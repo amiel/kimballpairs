@@ -22,7 +22,9 @@ ActiveAdmin.register KimballPair do
   end
 
   show title: :to_s do
-    attributes_table :words, :category, :comments, :submitted_by, :created_at
+    attributes_table :words, :category, :comments, :submitted_by, :created_at do
+      row(:submission) { admin_submission_path(resource.submission) }
+    end
 
     active_admin_comments
   end
