@@ -1,11 +1,15 @@
 
-<div>
+<div class="row">
+  <div class="span12">
+    <div class="well">
 
-  <h1><%= @kimball_pair %></h1>
+      <h1><%= @kimball_pair %></h1>
 
-  <% if @kimball_pair.submitted_by %>
-    <p>Submitted By: <%= @kimball_pair.submitted_by %></p>
-  <% end %>
+      <% if @kimball_pair.submitted_by %>
+        <p>Submitted By: <%= @kimball_pair.submitted_by %></p>
+      <% end %>
+    </div>
+  </div>
 </div>
 
 

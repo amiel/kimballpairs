@@ -8,7 +8,7 @@
           <h4><%= category.subtitle %></h4>
           <ul>
             <% category.kimball_pairs.ordered.each do |pair| %>
-              <li><%= pair %></li>
+              <li><%= link_to pair.to_s, pair_path(pair) %></li>
             <% end %>
           </ul>
         </div>
