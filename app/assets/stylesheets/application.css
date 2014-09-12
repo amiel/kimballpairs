@@ -21,6 +21,10 @@ form#new_submission textarea{ width: 400px; }
   max-height: 235px;
   overflow: hidden;
   position: relative;
+
+  -webkit-transition: max-height 3s ease;
+  -moz-transition: max-height 5s ease;
+  transition: max-height 5s ease;
 }
 
 .category .well .more{
