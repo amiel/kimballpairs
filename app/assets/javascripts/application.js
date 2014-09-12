@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+
+jQuery(document).ready(function($) {
+  $('.category .more a').click(function() {
+    $(this).toggleClass('expanded');
+    return false;
+  });
+});

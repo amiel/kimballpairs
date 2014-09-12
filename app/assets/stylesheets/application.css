@@ -16,3 +16,24 @@
 
 
 form#new_submission textarea{ width: 400px; }
+
+.category .well{
+  max-height: 235px;
+  overflow: hidden;
+  position: relative;
+}
+
+.category .well .more{
+  position: absolute;
+  bottom: 3px;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.category.expanded .well{
+  max-height: 9000px;
+}
+
+.category.expanded .more{
+  display: none;
+}

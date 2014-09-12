@@ -1,3 +1,13 @@
+<div class="row">
+  <div class="span12">
+    <div class="well">
+      <p>
+
+      </p>
+    </div>
+  </div>
+</div>
+
 
 <% categories.in_groups_of(3, false).each do |category_group| %>
   <div class="row">
@@ -11,6 +21,8 @@
               <li><%= link_to pair.to_s, pair_path(pair) %></li>
             <% end %>
           </ul>
+
+          <div class="more"><a href="#">More ...</a></div>
         </div>
       </div>
     <% end %>
