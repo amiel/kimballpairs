@@ -16,7 +16,7 @@
 
 jQuery(document).ready(function($) {
   $('.category .more a').click(function() {
-    $(this).toggleClass('expanded');
+    $(this).closest('.category').toggleClass('expanded');
     return false;
   });
 });
